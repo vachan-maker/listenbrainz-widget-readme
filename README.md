@@ -5,7 +5,12 @@
 **This is a rough project and the svg generated now looks terrible. I am working on fixing it.**
 
 ## Example
+### SVG Generated from API
 ![](https://listenbrainz-widget-readme.vercel.app/api)
+
+### Screenshot
+![image](https://github.com/user-attachments/assets/0369c82b-eddb-4093-93d6-9019d230748b)
+
 
 ## How to Use?
 1. Clone the repo
