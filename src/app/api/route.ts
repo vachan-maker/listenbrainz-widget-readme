@@ -35,13 +35,7 @@ export async function GET(request: Request) {
 
 function generateSVG(track_name: string, artist_name: string, music_service_name: string) {
     const svg = `<?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" style="fill: rgb(0, 0, 0);">
-  <rect x="1.6" y="1.848" width="150" height="150" style="stroke: rgb(0, 0, 0); fill: rgb(51, 51, 51);"/>
-  <text style="fill: yellow; font-family: &quot;Arial&quot;, sans-serif; font-size: 28px; font-style: italic; font-weight: 700; text-transform: lowercase; white-space: pre;" transform="matrix(0.238591, 0, 0, 0.22727, 30.100395, 17.420271)" x="6.822999954223633" y="57.96200180053711">listening to</text>
-  <text style="fill: rgb(33, 192, 99); font-family: &quot;Arial&quot;, sans-serif; font-size: 28px; font-style: italic; font-weight: 700; text-anchor: middle; white-space: pre;" transform="matrix(0.352341, 0, 0, 0.497911, 47.136147, 21.40827)" x="6.823" y="57.962">${track_name}</text>
-  <text style="fill: rgb(33, 192, 99); font-family: &quot;Arial&quot;, sans-serif; font-size: 28px; font-style: italic; font-weight: 700; text-transform: lowercase; white-space: pre;" transform="matrix(0.238591, 0, 0, 0.22727, 25.265982, 53.140553)" x="6.822999954223633" y="57.96200180053711">by ${artist_name}</text>
-  <text style="fill: orange; font-family: &quot;Arial&quot;, sans-serif; font-size: 28px; font-style: italic; font-weight: 700; text-transform: lowercase; white-space: pre;" transform="matrix(0.238591, 0, 0, 0.22727, 31.674744, 82.540047)"><tspan style="text-decoration: underline color(srgb 1 1 1 / 0.8);" x="6.823" y="57.962">On ${music_service_name}</tspan></text>
-</svg>`
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="216.831 170.08 450 150" width="450px" height="150px"><g id="object-8" transform="matrix(1, 0, 0, 1, 1.4210854715202004e-14, 0)"><rect x="216.831" y="170.08" width="450" height="150" style="fill: rgb(51, 51, 51); stroke: rgb(0, 0, 0); stroke-width: 1px;" id="object-0"/><text style="fill: rgb(255, 255, 255); font-family: &quot;Arial&quot;, sans-serif; font-size: 18px; white-space: pre; stroke-width: 1px;" y="-12.92" x="191.831" id="object-7"><tspan style="font-style: italic; word-spacing: 0px; stroke-width: 1px;" x="229.816" y="202.125">Tuned In to</tspan><tspan style="word-spacing: 0px; stroke-width: 1px;"> 🎵 </tspan></text><text style="fill: rgb(255, 255, 255); font-family: &quot;Arial&quot;, sans-serif; font-size: 30px; font-weight: 700; white-space: pre; stroke-width: 1px;" x="229.816" y="253.125" id="object-6">${track_name}</text><text style="fill: rgb(255, 255, 255); font-family: &quot;Arial&quot;, sans-serif; font-size: 15px; white-space: pre; stroke-width: 1px;" x="229.816" y="279.125" id="object-5">${artist_name}</text></g></svg>`
     return svg
 
 
@@ -50,13 +44,8 @@ function generateSVG(track_name: string, artist_name: string, music_service_name
 
 function generateNotPlaying() {
         const svg = `<?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" style="fill: rgb(0, 0, 0);">
-  <rect x="1.6" y="1.848" width="150" height="150" style="stroke: rgb(0, 0, 0); fill: rgb(51, 51, 51);"/>
-  <text style="fill: yellow; font-family: &quot;Arial&quot;, sans-serif; font-size: 28px; font-style: italic; font-weight: 700; text-transform: lowercase; white-space: pre;" transform="matrix(0.238591, 0, 0, 0.22727, 30.100395, 17.420271)" x="6.822999954223633" y="57.96200180053711">I am probably sleeping or something</text>
-  <text style="fill: rgb(33, 192, 99); font-family: &quot;Arial&quot;, sans-serif; font-size: 28px; font-style: italic; font-weight: 700; text-anchor: middle; white-space: pre;" transform="matrix(0.352341, 0, 0, 0.497911, 47.136147, 21.40827)" x="6.823" y="57.962">Not Listening</text>
-  <text style="fill: rgb(33, 192, 99); font-family: &quot;Arial&quot;, sans-serif; font-size: 28px; font-style: italic; font-weight: 700; text-transform: lowercase; white-space: pre;" transform="matrix(0.238591, 0, 0, 0.22727, 25.265982, 53.140553)" x="6.822999954223633" y="57.96200180053711"></text>
-  <text style="fill: orange; font-family: &quot;Arial&quot;, sans-serif; font-size: 28px; font-style: italic; font-weight: 700; text-transform: lowercase; white-space: pre;" transform="matrix(0.238591, 0, 0, 0.22727, 31.674744, 82.540047)"><tspan style="text-decoration: underline color(srgb 1 1 1 / 0.8);" x="6.823" y="57.962">On spotify</tspan></text>
-</svg>`
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="216.831 170.08 450 150" width="450px" height="150px"><g id="object-8" transform="matrix(1, 0, 0, 1, 1.4210854715202004e-14, 0)"><rect x="216.831" y="170.08" width="450" height="150" style="fill: rgb(51, 51, 51); stroke: rgb(0, 0, 0); stroke-width: 1px;" id="object-0"/><text style="fill: rgb(255, 255, 255); font-family: &quot;Arial&quot;, sans-serif; font-size: 18px; white-space: pre; stroke-width: 1px;" y="-12.92" x="191.831" id="object-7"><tspan style="font-style: italic; word-spacing: 0px; stroke-width: 1px;" x="229.816" y="202.125">Not Listening To Anything</tspan><tspan style="word-spacing: 0px; stroke-width: 1px;"> 🎵 </tspan></text><text style="fill: rgb(255, 255, 255); font-family: &quot;Arial&quot;, sans-serif; font-size: 30px; font-weight: 700; white-space: pre; stroke-width: 1px;" x="229.816" y="253.125" id="object-6"></text><text style="fill: rgb(255, 255, 255); font-family: &quot;Arial&quot;, sans-serif; font-size: 15px; white-space: pre; stroke-width: 1px;" x="229.816" y="279.125" id="object-5"></text></g></svg>`
     return svg
+
 
 }
