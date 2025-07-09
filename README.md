@@ -1,6 +1,16 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## ListenBrainz Widget Readme
+1. Generates an SVG image that displays the song you are listening to now from ListenBrainz.
+
+**This is a rough project and the svg generated now looks terrible. I am working on fixing it.**
+
+## Example
+![](https://listenbrainz-widget-readme.vercel.app/api)
+
+## How to Use?
+1. Clone the repo
+2. Create an `.env` file and set your username to the `LB_USERNAME` variable.
+3. Deploy it to Vercel
 
 First, run the development server:
 
