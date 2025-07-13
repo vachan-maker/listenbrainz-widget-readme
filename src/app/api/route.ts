@@ -16,7 +16,7 @@ export async function GET(request: Request) {
         const generatedSVG = generateSVG(track_name, artist_name, music_service_name)
         return new Response(generatedSVG, {
             headers: {
-                "Content-Type": "image/svg+xml",
+                "Content-Type": "image/svg+xml; charset=utf-8",
             }
         })
 
